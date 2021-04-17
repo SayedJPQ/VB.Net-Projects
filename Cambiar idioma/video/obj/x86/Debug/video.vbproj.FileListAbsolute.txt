@@ -1,0 +1,24 @@
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\bin\Debug\video.exe
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\bin\Debug\video.pdb
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\bin\Debug\video.xml
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.Resources.resources
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.Ingles.resources
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.vbproj.GenerateResource.Cache
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.exe
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.xml
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.pdb
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.Español.resources
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.Idioma.resources
+C:\Users\José Andrés Argueta\AppData\Local\Temporary Projects\video\obj\x86\Debug\video.Ingresar.resources
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.exe
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.xml
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.pdb
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\bin\Debug\video.exe
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\bin\Debug\video.pdb
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\bin\Debug\video.xml
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.Idioma.resources
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.Ingresar.resources
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.Resources.resources
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.Ingles.resources
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.Español.resources
+C:\Users\José Andrés Argueta\Desktop\Ejemplo\video\video\obj\x86\Debug\video.vbproj.GenerateResource.Cache

@@ -1,0 +1,40 @@
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbprojAssemblyReference.cache
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp_1.Form1.resources
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbproj.GenerateResource.cache
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.AssemblyInfoInputs.cache
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.AssemblyInfo.vb
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbproj.CoreCompileInputs.cache
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.pdb
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Promp 1.exe
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Promp 1.deps.json
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Promp 1.runtimeconfig.json
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Promp 1.runtimeconfig.dev.json
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Promp 1.dll
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Interop.SpeechLib.dll
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbproj.CopyComplete
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.dll
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\ref\Promp 1.dll
+C:\Users\PC0\Desktop\Promp 1\obj\Debug\net5.0-windows\Promp 1.genruntimeconfig.cache
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\ref\Promp 1.dll
+C:\Users\PC0\Desktop\Promp 1\bin\Debug\net5.0-windows\Promp 1.pdb
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Promp 1.exe
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Promp 1.deps.json
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Promp 1.runtimeconfig.json
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Promp 1.runtimeconfig.dev.json
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Promp 1.dll
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\ref\Promp 1.dll
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Promp 1.pdb
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\bin\Debug\net5.0-windows\Interop.SpeechLib.dll
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbprojAssemblyReference.cache
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp_1.Form1.resources
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbproj.GenerateResource.cache
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.AssemblyInfoInputs.cache
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.AssemblyInfo.vb
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbproj.CoreCompileInputs.cache
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.vbproj.CopyComplete
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.dll
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\ref\Promp 1.dll
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.pdb
+C:\Users\PC0\Desktop\Proyectos VB.NET\Promp 1\obj\Debug\net5.0-windows\Promp 1.genruntimeconfig.cache

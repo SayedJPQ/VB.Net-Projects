@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Calcular edad", "Calcular edad.vbproj", "{9421F6E0-D979-40EF-B1F3-FC159464E214}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9421F6E0-D979-40EF-B1F3-FC159464E214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9421F6E0-D979-40EF-B1F3-FC159464E214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9421F6E0-D979-40EF-B1F3-FC159464E214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9421F6E0-D979-40EF-B1F3-FC159464E214}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C384DD9D-D92F-4C2C-ACD5-96AE14D7A55D}
+	EndGlobalSection
+EndGlobal

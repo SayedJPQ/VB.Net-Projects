@@ -1,0 +1,13 @@
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\bin\Debug\Inventario.mdb
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\bin\Debug\Inventario.exe.config
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\bin\Debug\Inventario.exe
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\bin\Debug\Inventario.pdb
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\bin\Debug\Inventario.xml
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.vbprojAssemblyReference.cache
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.Form1.resources
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.Resources.resources
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.vbproj.GenerateResource.cache
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.vbproj.CoreCompileInputs.cache
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.exe
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.xml
+C:\Users\PC0\Desktop\Sayed\Programacion\Proyectos VB.NET\Inventario\obj\Debug\Inventario.pdb

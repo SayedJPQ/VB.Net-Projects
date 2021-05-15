@@ -445,8 +445,7 @@ Partial Public Class InventarioDataSet
             MyBase.Columns.Add(Me.columnStock)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCodigo}, true))
             Me.columnCodigo.AutoIncrement = true
-            Me.columnCodigo.AutoIncrementSeed = -1
-            Me.columnCodigo.AutoIncrementStep = -1
+            Me.columnCodigo.AutoIncrementSeed = 1
             Me.columnCodigo.AllowDBNull = false
             Me.columnCodigo.Unique = true
             Me.columnProducto.MaxLength = 255

@@ -28,6 +28,8 @@ Partial Class Form1
         Dim PrecioLabel As System.Windows.Forms.Label
         Dim StockLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim Label1 As System.Windows.Forms.Label
+        Dim Label2 As System.Windows.Forms.Label
         Me.InventarioDataSet = New Inventario.InventarioDataSet()
         Me.InventarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.InventarioTableAdapter = New Inventario.InventarioDataSetTableAdapters.InventarioTableAdapter()
@@ -61,10 +63,16 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Entrada = New System.Windows.Forms.TextBox()
+        Me.Salida = New System.Windows.Forms.TextBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         CodigoLabel = New System.Windows.Forms.Label()
         ProductoLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
         StockLabel = New System.Windows.Forms.Label()
+        Label1 = New System.Windows.Forms.Label()
+        Label2 = New System.Windows.Forms.Label()
         CType(Me.InventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,7 +155,7 @@ Partial Class Form1
         Me.InventarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.InventarioBindingNavigator.Name = "InventarioBindingNavigator"
         Me.InventarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(877, 28)
+        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(1034, 28)
         Me.InventarioBindingNavigator.TabIndex = 0
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
         '
@@ -288,7 +296,7 @@ Partial Class Form1
         Me.InventarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.InventarioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.InventarioDataGridView.DataSource = Me.InventarioBindingSource
-        Me.InventarioDataGridView.Location = New System.Drawing.Point(422, 31)
+        Me.InventarioDataGridView.Location = New System.Drawing.Point(585, 22)
         Me.InventarioDataGridView.Name = "InventarioDataGridView"
         Me.InventarioDataGridView.ReadOnly = True
         Me.InventarioDataGridView.Size = New System.Drawing.Size(443, 220)
@@ -392,11 +400,75 @@ Partial Class Form1
         Me.Button7.Text = "Guardar"
         Me.Button7.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Label1.AutoSize = True
+        Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label1.Location = New System.Drawing.Point(9, 210)
+        Label1.Name = "Label1"
+        Label1.Size = New System.Drawing.Size(79, 21)
+        Label1.TabIndex = 16
+        Label1.Text = "Entradas:"
+        '
+        'Label2
+        '
+        Label2.AutoSize = True
+        Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label2.Location = New System.Drawing.Point(12, 251)
+        Label2.Name = "Label2"
+        Label2.Size = New System.Drawing.Size(67, 21)
+        Label2.TabIndex = 17
+        Label2.Text = "Salidas:"
+        '
+        'Entrada
+        '
+        Me.Entrada.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.InventarioBindingSource, "Stock", True))
+        Me.Entrada.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Entrada.Location = New System.Drawing.Point(109, 207)
+        Me.Entrada.Name = "Entrada"
+        Me.Entrada.Size = New System.Drawing.Size(245, 29)
+        Me.Entrada.TabIndex = 18
+        '
+        'Salida
+        '
+        Me.Salida.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.InventarioBindingSource, "Stock", True))
+        Me.Salida.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Salida.Location = New System.Drawing.Point(109, 248)
+        Me.Salida.Name = "Salida"
+        Me.Salida.Size = New System.Drawing.Size(245, 29)
+        Me.Salida.TabIndex = 19
+        '
+        'Button8
+        '
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(360, 210)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(195, 32)
+        Me.Button8.TabIndex = 20
+        Me.Button8.Text = "Confirmar entrada"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(360, 248)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(195, 32)
+        Me.Button9.TabIndex = 21
+        Me.Button9.Text = "Confirmar Salida"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(877, 450)
+        Me.ClientSize = New System.Drawing.Size(1034, 450)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Salida)
+        Me.Controls.Add(Me.Entrada)
+        Me.Controls.Add(Label2)
+        Me.Controls.Add(Label1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -415,6 +487,7 @@ Partial Class Form1
         Me.Controls.Add(Me.StockTextBox)
         Me.Controls.Add(Me.InventarioBindingNavigator)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.InventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -460,4 +533,8 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
+    Friend WithEvents Entrada As TextBox
+    Friend WithEvents Salida As TextBox
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
 End Class

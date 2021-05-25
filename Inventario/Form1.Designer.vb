@@ -27,15 +27,13 @@ Partial Class Form1
         Dim ProductoLabel As System.Windows.Forms.Label
         Dim PrecioLabel As System.Windows.Forms.Label
         Dim StockLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Dim Label1 As System.Windows.Forms.Label
         Dim Label2 As System.Windows.Forms.Label
-        Me.InventarioDataSet = New Inventario.InventarioDataSet()
-        Me.InventarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.InventarioTableAdapter = New Inventario.InventarioDataSetTableAdapters.InventarioTableAdapter()
-        Me.TableAdapterManager = New Inventario.InventarioDataSetTableAdapters.TableAdapterManager()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.InventarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.InventarioDataSet = New Inventario.InventarioDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -67,16 +65,18 @@ Partial Class Form1
         Me.Salida = New System.Windows.Forms.TextBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.InventarioTableAdapter = New Inventario.InventarioDataSetTableAdapters.InventarioTableAdapter()
+        Me.TableAdapterManager = New Inventario.InventarioDataSetTableAdapters.TableAdapterManager()
         CodigoLabel = New System.Windows.Forms.Label()
         ProductoLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
         StockLabel = New System.Windows.Forms.Label()
         Label1 = New System.Windows.Forms.Label()
         Label2 = New System.Windows.Forms.Label()
-        CType(Me.InventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.InventarioBindingNavigator.SuspendLayout()
+        CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.InventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -120,25 +120,25 @@ Partial Class Form1
         StockLabel.TabIndex = 7
         StockLabel.Text = "Stock:"
         '
-        'InventarioDataSet
+        'Label1
         '
-        Me.InventarioDataSet.DataSetName = "InventarioDataSet"
-        Me.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Label1.AutoSize = True
+        Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label1.Location = New System.Drawing.Point(9, 210)
+        Label1.Name = "Label1"
+        Label1.Size = New System.Drawing.Size(79, 21)
+        Label1.TabIndex = 16
+        Label1.Text = "Entradas:"
         '
-        'InventarioBindingSource
+        'Label2
         '
-        Me.InventarioBindingSource.DataMember = "Inventario"
-        Me.InventarioBindingSource.DataSource = Me.InventarioDataSet
-        '
-        'InventarioTableAdapter
-        '
-        Me.InventarioTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.InventarioTableAdapter = Me.InventarioTableAdapter
-        Me.TableAdapterManager.UpdateOrder = Inventario.InventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Label2.AutoSize = True
+        Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label2.Location = New System.Drawing.Point(12, 251)
+        Label2.Name = "Label2"
+        Label2.Size = New System.Drawing.Size(67, 21)
+        Label2.TabIndex = 17
+        Label2.Text = "Salidas:"
         '
         'InventarioBindingNavigator
         '
@@ -167,6 +167,16 @@ Partial Class Form1
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 25)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'InventarioBindingSource
+        '
+        Me.InventarioBindingSource.DataMember = "Inventario"
+        Me.InventarioBindingSource.DataSource = Me.InventarioDataSet
+        '
+        'InventarioDataSet
+        '
+        Me.InventarioDataSet.DataSetName = "InventarioDataSet"
+        Me.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -400,26 +410,6 @@ Partial Class Form1
         Me.Button7.Text = "Guardar"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Label1.AutoSize = True
-        Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label1.Location = New System.Drawing.Point(9, 210)
-        Label1.Name = "Label1"
-        Label1.Size = New System.Drawing.Size(79, 21)
-        Label1.TabIndex = 16
-        Label1.Text = "Entradas:"
-        '
-        'Label2
-        '
-        Label2.AutoSize = True
-        Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label2.Location = New System.Drawing.Point(12, 251)
-        Label2.Name = "Label2"
-        Label2.Size = New System.Drawing.Size(67, 21)
-        Label2.TabIndex = 17
-        Label2.Text = "Salidas:"
-        '
         'Entrada
         '
         Me.Entrada.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.InventarioBindingSource, "Stock", True))
@@ -458,6 +448,16 @@ Partial Class Form1
         Me.Button9.Text = "Confirmar Salida"
         Me.Button9.UseVisualStyleBackColor = True
         '
+        'InventarioTableAdapter
+        '
+        Me.InventarioTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.InventarioTableAdapter = Me.InventarioTableAdapter
+        Me.TableAdapterManager.UpdateOrder = Inventario.InventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -489,11 +489,11 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        CType(Me.InventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.InventarioBindingNavigator.ResumeLayout(False)
         Me.InventarioBindingNavigator.PerformLayout()
+        CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

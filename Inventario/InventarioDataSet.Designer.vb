@@ -291,6 +291,22 @@ Partial Public Class InventarioDataSet
         
         Private columnStock As Global.System.Data.DataColumn
         
+        Private columnExpr2 As Global.System.Data.DataColumn
+        
+        Private columnExpr3 As Global.System.Data.DataColumn
+        
+        Private columnExpr4 As Global.System.Data.DataColumn
+        
+        Private columnExpr1 As Global.System.Data.DataColumn
+        
+        Private columnExpr5 As Global.System.Data.DataColumn
+        
+        Private columnExpr6 As Global.System.Data.DataColumn
+        
+        Private columnExpr7 As Global.System.Data.DataColumn
+        
+        Private columnExpr8 As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -359,6 +375,70 @@ Partial Public Class InventarioDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr2Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr2
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr3Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr3
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr4Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr4
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr1Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr1
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr5Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr5
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr6Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr6
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr7Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr7
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Expr8Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnExpr8
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -395,9 +475,9 @@ Partial Public Class InventarioDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddInventarioRow(ByVal Producto As String, ByVal Precio As Integer, ByVal Stock As Integer) As InventarioRow
+        Public Overloads Function AddInventarioRow(ByVal Producto As String, ByVal Precio As Integer, ByVal Stock As Integer, ByVal Expr2 As String, ByVal Expr3 As Integer, ByVal Expr4 As Integer, ByVal Expr6 As String, ByVal Expr7 As Integer, ByVal Expr8 As Integer) As InventarioRow
             Dim rowInventarioRow As InventarioRow = CType(Me.NewRow,InventarioRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Producto, Precio, Stock}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Producto, Precio, Stock, Expr2, Expr3, Expr4, Nothing, Nothing, Expr6, Expr7, Expr8}
             rowInventarioRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowInventarioRow)
             Return rowInventarioRow
@@ -430,6 +510,14 @@ Partial Public Class InventarioDataSet
             Me.columnProducto = MyBase.Columns("Producto")
             Me.columnPrecio = MyBase.Columns("Precio")
             Me.columnStock = MyBase.Columns("Stock")
+            Me.columnExpr2 = MyBase.Columns("Expr2")
+            Me.columnExpr3 = MyBase.Columns("Expr3")
+            Me.columnExpr4 = MyBase.Columns("Expr4")
+            Me.columnExpr1 = MyBase.Columns("Expr1")
+            Me.columnExpr5 = MyBase.Columns("Expr5")
+            Me.columnExpr6 = MyBase.Columns("Expr6")
+            Me.columnExpr7 = MyBase.Columns("Expr7")
+            Me.columnExpr8 = MyBase.Columns("Expr8")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -443,12 +531,39 @@ Partial Public Class InventarioDataSet
             MyBase.Columns.Add(Me.columnPrecio)
             Me.columnStock = New Global.System.Data.DataColumn("Stock", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnStock)
+            Me.columnExpr2 = New Global.System.Data.DataColumn("Expr2", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr2)
+            Me.columnExpr3 = New Global.System.Data.DataColumn("Expr3", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr3)
+            Me.columnExpr4 = New Global.System.Data.DataColumn("Expr4", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr4)
+            Me.columnExpr1 = New Global.System.Data.DataColumn("Expr1", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr1)
+            Me.columnExpr5 = New Global.System.Data.DataColumn("Expr5", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr5)
+            Me.columnExpr6 = New Global.System.Data.DataColumn("Expr6", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr6)
+            Me.columnExpr7 = New Global.System.Data.DataColumn("Expr7", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr7)
+            Me.columnExpr8 = New Global.System.Data.DataColumn("Expr8", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnExpr8)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCodigo}, true))
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint2", New Global.System.Data.DataColumn() {Me.columnExpr5}, false))
             Me.columnCodigo.AutoIncrement = true
             Me.columnCodigo.AutoIncrementSeed = 1
             Me.columnCodigo.AllowDBNull = false
             Me.columnCodigo.Unique = true
             Me.columnProducto.MaxLength = 255
+            Me.columnExpr2.MaxLength = 255
+            Me.columnExpr1.AutoIncrement = true
+            Me.columnExpr1.AutoIncrementSeed = -1
+            Me.columnExpr1.AutoIncrementStep = -1
+            Me.columnExpr5.AutoIncrement = true
+            Me.columnExpr5.AutoIncrementSeed = -1
+            Me.columnExpr5.AutoIncrementStep = -1
+            Me.columnExpr5.AllowDBNull = false
+            Me.columnExpr5.Unique = true
+            Me.columnExpr6.MaxLength = 255
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -651,6 +766,122 @@ Partial Public Class InventarioDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr2() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr2Column),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr2' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr2Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr3() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr3Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr3' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr3Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr4() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr4Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr4' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr4Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr1() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr1Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr1' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr1Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr5() As Integer
+            Get
+                Return CType(Me(Me.tableInventario.Expr5Column),Integer)
+            End Get
+            Set
+                Me(Me.tableInventario.Expr5Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr6() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr6Column),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr6' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr6Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr7() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr7Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr7' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr7Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Expr8() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableInventario.Expr8Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Expr8' in table 'Inventario' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableInventario.Expr8Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsProductoNull() As Boolean
             Return Me.IsNull(Me.tableInventario.ProductoColumn)
         End Function
@@ -683,6 +914,90 @@ Partial Public Class InventarioDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetStockNull()
             Me(Me.tableInventario.StockColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr2Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr2Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr2Null()
+            Me(Me.tableInventario.Expr2Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr3Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr3Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr3Null()
+            Me(Me.tableInventario.Expr3Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr4Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr4Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr4Null()
+            Me(Me.tableInventario.Expr4Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr1Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr1Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr1Null()
+            Me(Me.tableInventario.Expr1Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr6Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr6Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr6Null()
+            Me(Me.tableInventario.Expr6Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr7Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr7Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr7Null()
+            Me(Me.tableInventario.Expr7Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsExpr8Null() As Boolean
+            Return Me.IsNull(Me.tableInventario.Expr8Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetExpr8Null()
+            Me(Me.tableInventario.Expr8Column) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -856,13 +1171,42 @@ Namespace InventarioDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Producto", "Producto")
             tableMapping.ColumnMappings.Add("Precio", "Precio")
             tableMapping.ColumnMappings.Add("Stock", "Stock")
+            tableMapping.ColumnMappings.Add("Expr2", "Expr2")
+            tableMapping.ColumnMappings.Add("Expr3", "Expr3")
+            tableMapping.ColumnMappings.Add("Expr4", "Expr4")
+            tableMapping.ColumnMappings.Add("Expr1", "Expr1")
+            tableMapping.ColumnMappings.Add("Expr5", "Expr5")
+            tableMapping.ColumnMappings.Add("Expr6", "Expr6")
+            tableMapping.ColumnMappings.Add("Expr7", "Expr7")
+            tableMapping.ColumnMappings.Add("Expr8", "Expr8")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Inventario` WHERE ((`Codigo` = ?) AND ((? = 1 AND `Producto` IS NULL"& _ 
-                ") OR (`Producto` = ?)) AND ((? = 1 AND `Precio` IS NULL) OR (`Precio` = ?)) AND "& _ 
-                "((? = 1 AND `Stock` IS NULL) OR (`Stock` = ?)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Inventario` WHERE (((? = 1 AND `Producto` IS NULL) OR (`Producto` = "& _ 
+                "?)) AND ((? = 1 AND `Precio` IS NULL) OR (`Precio` = ?)) AND ((? = 1 AND `Stock`"& _ 
+                " IS NULL) OR (`Stock` = ?)) AND (`Codigo` = ?) AND ((? = 1 AND `Producto` IS NUL"& _ 
+                "L) OR (`Producto` = ?)) AND ((? = 1 AND `Precio` IS NULL) OR (`Precio` = ?)) AND"& _ 
+                " ((? = 1 AND `Stock` IS NULL) OR (`Stock` = ?)) AND ((? = 1 AND `Codigo` IS NULL"& _ 
+                ") OR (`Codigo` = ?)) AND ((? = 1 AND `Codigo` IS NULL) OR (`Codigo` = ?)) AND (("& _ 
+                "? = 1 AND `Producto` IS NULL) OR (`Producto` = ?)) AND ((? = 1 AND `Precio` IS N"& _ 
+                "ULL) OR (`Precio` = ?)) AND ((? = 1 AND `Stock` IS NULL) OR (`Stock` = ?)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr2", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr2", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr2", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr2", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr3", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr3", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr3", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr3", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr4", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr4", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr4", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr4", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr5", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr5", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr6", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr6", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr6", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr6", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr7", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr7", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr7", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr7", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr8", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr8", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr8", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr8", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr1", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr1", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr1", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr1", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Codigo", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Codigo", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Producto", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Producto", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Producto", Global.System.Data.DataRowVersion.Original, false, Nothing))
@@ -872,21 +1216,56 @@ Namespace InventarioDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Stock", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Stock", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Inventario` (`Producto`, `Precio`, `Stock`) VALUES (?, ?, ?)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Inventario` (`Producto`, `Precio`, `Stock`, `Producto`, `Precio`, `S"& _ 
+                "tock`, `Producto`, `Precio`, `Stock`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr2", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr2", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr3", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr3", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr4", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr4", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr6", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr6", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr7", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr7", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr8", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr8", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Producto", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Precio", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Precio", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Stock", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Stock", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `Inventario` SET `Producto` = ?, `Precio` = ?, `Stock` = ? WHERE ((`Codigo"& _ 
-                "` = ?) AND ((? = 1 AND `Producto` IS NULL) OR (`Producto` = ?)) AND ((? = 1 AND "& _ 
-                "`Precio` IS NULL) OR (`Precio` = ?)) AND ((? = 1 AND `Stock` IS NULL) OR (`Stock"& _ 
-                "` = ?)))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `Inventario` SET `Producto` = ?, `Precio` = ?, `Stock` = ?, `Producto` = ?"& _ 
+                ", `Precio` = ?, `Stock` = ?, `Producto` = ?, `Precio` = ?, `Stock` = ? WHERE ((("& _ 
+                "? = 1 AND `Producto` IS NULL) OR (`Producto` = ?)) AND ((? = 1 AND `Precio` IS N"& _ 
+                "ULL) OR (`Precio` = ?)) AND ((? = 1 AND `Stock` IS NULL) OR (`Stock` = ?)) AND ("& _ 
+                "`Codigo` = ?) AND ((? = 1 AND `Producto` IS NULL) OR (`Producto` = ?)) AND ((? ="& _ 
+                " 1 AND `Precio` IS NULL) OR (`Precio` = ?)) AND ((? = 1 AND `Stock` IS NULL) OR "& _ 
+                "(`Stock` = ?)) AND ((? = 1 AND `Codigo` IS NULL) OR (`Codigo` = ?)) AND ((? = 1 "& _ 
+                "AND `Codigo` IS NULL) OR (`Codigo` = ?)) AND ((? = 1 AND `Producto` IS NULL) OR "& _ 
+                "(`Producto` = ?)) AND ((? = 1 AND `Precio` IS NULL) OR (`Precio` = ?)) AND ((? ="& _ 
+                " 1 AND `Stock` IS NULL) OR (`Stock` = ?)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr2", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr2", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr3", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr3", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr4", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr4", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr6", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr6", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr7", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr7", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Expr8", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr8", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Producto", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Precio", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Precio", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Stock", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Stock", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr2", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr2", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr2", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr2", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr3", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr3", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr3", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr3", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr4", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr4", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr4", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr4", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr5", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr5", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr6", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr6", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr6", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr6", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr7", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr7", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr7", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr7", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr8", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr8", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr8", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr8", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Expr1", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr1", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Expr1", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Expr1", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Codigo", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Codigo", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Producto", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Producto", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Producto", Global.System.Data.DataRowVersion.Original, false, Nothing))
@@ -909,7 +1288,9 @@ Namespace InventarioDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Codigo, Producto, Precio, Stock FROM Inventario"
+            Me._commandCollection(0).CommandText = "SELECT        Producto AS Expr2, Precio AS Expr3, Stock AS Expr4, Codigo AS Expr5"& _ 
+                ", Producto AS Expr6, Precio AS Expr7, Stock AS Expr8, Codigo AS Expr1, Inventari"& _ 
+                "o.*"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Inventario"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -969,28 +1350,52 @@ Namespace InventarioDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Codigo As Integer, ByVal Original_Producto As String, ByVal Original_Precio As Global.System.Nullable(Of Integer), ByVal Original_Stock As Global.System.Nullable(Of Integer)) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Codigo,Integer)
-            If (Original_Producto Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
+        Public Overloads Overridable Function Delete(ByVal Original_Expr2 As String, ByVal Original_Expr3 As Integer, ByVal Original_Expr4 As Integer, ByVal Original_Expr5 As Integer, ByVal Original_Expr6 As String, ByVal Original_Expr7 As Integer, ByVal Original_Expr8 As Integer, ByVal Original_Expr1 As Integer, ByVal Original_Codigo As Integer, ByVal Original_Producto As String, ByVal Original_Precio As Global.System.Nullable(Of Integer), ByVal Original_Stock As Global.System.Nullable(Of Integer)) As Integer
+            If (Original_Expr2 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Expr2")
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_Producto,String)
+                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Expr2,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Expr3,Integer)
+            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_Expr4,Integer)
+            Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_Expr5,Integer)
+            If (Original_Expr6 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Expr6")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Expr6,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(9).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_Expr7,Integer)
+            Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(12).Value = CType(Original_Expr8,Integer)
+            Me.Adapter.DeleteCommand.Parameters(13).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(14).Value = CType(Original_Expr1,Integer)
+            Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_Codigo,Integer)
+            If (Original_Producto Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_Producto,String)
             End If
             If (Original_Precio.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_Precio.Value,Integer)
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(Original_Precio.Value,Integer)
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(20).Value = Global.System.DBNull.Value
             End If
             If (Original_Stock.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_Stock.Value,Integer)
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(22).Value = CType(Original_Stock.Value,Integer)
             Else
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(22).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1011,21 +1416,35 @@ Namespace InventarioDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Producto As String, ByVal Precio As Global.System.Nullable(Of Integer), ByVal Stock As Global.System.Nullable(Of Integer)) As Integer
-            If (Producto Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+        Public Overloads Overridable Function Insert(ByVal Expr2 As String, ByVal Expr3 As Integer, ByVal Expr4 As Integer, ByVal Expr6 As String, ByVal Expr7 As Integer, ByVal Expr8 As Integer, ByVal Producto As String, ByVal Precio As Global.System.Nullable(Of Integer), ByVal Stock As Global.System.Nullable(Of Integer)) As Integer
+            If (Expr2 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Expr2")
             Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Producto,String)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Expr2,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(Expr3,Integer)
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(Expr4,Integer)
+            If (Expr6 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Expr6")
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(Expr6,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(4).Value = CType(Expr7,Integer)
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(Expr8,Integer)
+            If (Producto Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(Producto,String)
             End If
             If (Precio.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(Precio.Value,Integer)
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(Precio.Value,Integer)
             Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+                Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
             End If
             If (Stock.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(Stock.Value,Integer)
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Stock.Value,Integer)
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+                Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1046,43 +1465,102 @@ Namespace InventarioDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Producto As String, ByVal Precio As Global.System.Nullable(Of Integer), ByVal Stock As Global.System.Nullable(Of Integer), ByVal Original_Codigo As Integer, ByVal Original_Producto As String, ByVal Original_Precio As Global.System.Nullable(Of Integer), ByVal Original_Stock As Global.System.Nullable(Of Integer)) As Integer
-            If (Producto Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
+        Public Overloads Overridable Function Update( _
+                    ByVal Expr2 As String,  _
+                    ByVal Expr3 As Integer,  _
+                    ByVal Expr4 As Integer,  _
+                    ByVal Expr6 As String,  _
+                    ByVal Expr7 As Integer,  _
+                    ByVal Expr8 As Integer,  _
+                    ByVal Producto As String,  _
+                    ByVal Precio As Global.System.Nullable(Of Integer),  _
+                    ByVal Stock As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Expr2 As String,  _
+                    ByVal Original_Expr3 As Integer,  _
+                    ByVal Original_Expr4 As Integer,  _
+                    ByVal Original_Expr5 As Integer,  _
+                    ByVal Original_Expr6 As String,  _
+                    ByVal Original_Expr7 As Integer,  _
+                    ByVal Original_Expr8 As Integer,  _
+                    ByVal Original_Expr1 As Integer,  _
+                    ByVal Original_Codigo As Integer,  _
+                    ByVal Original_Producto As String,  _
+                    ByVal Original_Precio As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Stock As Global.System.Nullable(Of Integer)) As Integer
+            If (Expr2 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Expr2")
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Producto,String)
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Expr2,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Expr3,Integer)
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Expr4,Integer)
+            If (Expr6 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Expr6")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Expr6,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Expr7,Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Expr8,Integer)
+            If (Producto Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Producto,String)
             End If
             If (Precio.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Precio.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Precio.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (Stock.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Stock.Value,Integer)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_Codigo,Integer)
-            If (Original_Producto Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_Producto,String)
-            End If
-            If (Original_Precio.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_Precio.Value,Integer)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
             End If
-            If (Original_Stock.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Stock.Value,Integer)
+            If (Stock.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Stock.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Expr2 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Expr2")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_Expr2,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_Expr3,Integer)
+            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_Expr4,Integer)
+            Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_Expr5,Integer)
+            If (Original_Expr6 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Expr6")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_Expr6,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_Expr7,Integer)
+            Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_Expr8,Integer)
+            Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_Expr1,Integer)
+            Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_Codigo,Integer)
+            If (Original_Producto Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_Producto,String)
+            End If
+            If (Original_Precio.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_Precio.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Stock.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_Stock.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
